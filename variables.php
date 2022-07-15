@@ -107,4 +107,57 @@ $modulo=$a % $c;
 $modulo_2=$a % $b;
 echo "Modulo: ".$modulo."<br />";
 echo "Modulo: ".$modulo_2."<br />";
+
+/*
+Operadores de Asignacion
+
+= += *= /= .=
+
+*/
+
+# Operador de asignacion
+$a =10;
+
+$a +=5;  // $a=$a+5;
+$a = $a+5;
+echo $a."<br/>";
+
+$b=5;
+$b *=5; // $b=$b*5;
+echo $b."<br/>";
+
+$c=5;
+$c /=5; //$c=$c/5;
+echo $c."<br/>";
+
+
+$a=10;
+$a .= 5; // $a=$a." ".5;
+echo $a."<br/>";
+
+// Con cadena de caracteres
+
+$a="abc"."edf";
+$a .= "ghij"; // $a=$a.""."ghif"; 
+echo $a."<br/>";
+
+/*
+Operadores de incremento / decremento
+++$variable, $variable++
+--$variable, $variable--
+*/
+
+$valor=15;
+$nuevoValor= $valor++;
+#$nuevoValor_2= ++$valor;
+echo $nuevoValor."<br/>";
+#echo $nuevoValor_2."<br/>";
+echo $valor."<br/>";
+
+
+$valor_2=15;
+$nuevoValor_2= $valor_2--;
+echo $nuevoValor_2."<br/>";
+echo $valor_2;
+
 ?>
