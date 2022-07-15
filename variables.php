@@ -63,6 +63,48 @@
 
 
  $variable = "Nuevo dato";
- echo $nueva;
+ echo $nueva."<br />";
 
+ /*
+  OPERADORES aritmeticos
+
+  Suma + , suma de a+b
+  Resta - , diferencia de a-b
+  Multiplicacion * , producto de a *b
+  Division /, cociente de a y b
+  Modulo %, resto de a dividido por b
+
+  
+
+ */
+
+ // Ejemplos
+
+ # suma
+ $a = 10;
+ $b = 20;
+ $c=2;
+
+ $suma=$a+$b;
+ echo "Suma: ".$suma."<br />";
+
+# resta
+$resta= $a-$b;
+echo "Resta: ".$resta."<br />";
+
+# Multiplicacion
+$multiplicacion=$a*$b;
+echo "Multiplicacion: ".$multiplicacion."<br />";
+
+# Division
+$division = $a/$c;
+$division_2 = $c /$a;
+echo "Division: ".$division."<br />";
+echo "Division_2: ".$division_2."<br />";
+
+# Modulo
+$modulo=$a % $c;
+$modulo_2=$a % $b;
+echo "Modulo: ".$modulo."<br />";
+echo "Modulo: ".$modulo_2."<br />";
 ?>
