@@ -23,4 +23,13 @@ foreach($pais_ciudades as $clave => $valor){
     var_dump ($clave,$valor);
 }
 
+
+/*
+EJERCICIO 2
+
+Escribe el código necesario para 
+encontrar los 3 números más grandes y los 3 números más bajos de la siguiente lista:
+
+*/
+
 ?>
