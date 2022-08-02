@@ -46,6 +46,43 @@ var_dump($videojuegos);
 #Ordenar de manera inversar sin perder su indice
 arsort($videojuegos);
 var_dump($videojuegos);
+echo "<br/>";
+
+
+
+#Sumar valores del arreglo
+$numeros=[1,20,30,15,5];
+$suma = array_sum($numeros);
+echo "Mi suma es ". $suma;
+echo "<br/>";
+
+
+#Encontrar diferencia entre arreglos
+$salonA=['a1' => 'Juan','a2' => 'Susana','a3' => 'Homero','a4' => 'Jaime'];
+$salonB=['a1' => 'Santiago', 'a2' => 'Diego','a3' => 'David','a4' => 'Jaime'];
+
+$diferencia = array_diff($salonA,$salonB);
+
+var_dump($diferencia);
+echo "<br/>";
+
+# Dividir un arreglo especificado su tamaño
+$videojugos =[
+    'FIFA' ,'Fortnite','Red Dead',
+    'Call of Dutty','Battlefield',
+    'Pokemon','GTA','The Sims','NFL'
+];
+
+$dividir=array_chunk($videojuegos,2);
+var_dump($dividir);
+echo "<br/>";
+
+#Dividir el arreglo y eliminar lo anterior
+var_dump(array_slice($videojuegos,2));
+
+
+
+
 
 
 
