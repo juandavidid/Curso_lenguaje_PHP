@@ -11,9 +11,12 @@ los multiplos  de 400 si
 
 // declaramos la variables
 
-$año_actual=2033;
+$año_actual=2020;
+$coeficiente_100 = $año_actual/100;
+$coeficiente_4 = $año_actual/4;
 
-if ($año_actual % 100 > 0 ) {
+
+if (gettype($coeficiente_100)!= gettype($año_actual) and gettype($coeficiente_4)!= gettype($año_actual) ) {
     echo "No es años bisiesto";
 }else{
     if ($año_actual % 4 == 0 or $año_actual % 400 ==0){
@@ -21,9 +24,6 @@ if ($año_actual % 100 > 0 ) {
     }
 }
    
-
-
-
 
 
 ?>
