@@ -38,7 +38,7 @@ while ($salir != 1){
         $salir = 1;
     }else{
         echo "<p>la fruta encontrada es".$frutas[$i]."</p>";
-        $i=$i+1 ; // $i++;
+        $i=$i+1 ; // $i++;  // variables de incremento   
     }
 
 }
