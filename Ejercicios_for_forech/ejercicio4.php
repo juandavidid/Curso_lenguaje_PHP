@@ -21,20 +21,14 @@ if ($cantidad_numeros < 0){
     echo "¡Imposible!";
 
 }else{
-    $numeros_ingresados=readline("Escriba un numero: ");
-    $numeros_mas_grande=readline("Escriba un numero mas grande que ".$numeros_ingresados);
-    for ($i=1; $i<$cantidad_numeros; $i=$i+1){
-       $numero=readline("Escriba un numero mas grande que ".$numeros_ingresados);
-       
-       if ($numeros_ingresados > $numeros_mas_grande  ){
-            while($numeros_ingresados > $numeros_mas_grande){
-                echo "¡".$numeros_mas_grande."no es mayor que ".$numeros_ingresados."\n" ;
-                $numeros_mas_grande=readline("Escriba un numero mas grande que : ".$numeros_ingresados);
-            }
-            continue;
-
-       }
-
+   $numero_inicio=readline("Escriba un numero: ");
+   for ($i=1;$i<$cantidad_numeros-1;$i=$i+1){
+      $numero=readline("Escriba un numero mas grande que ".$numero_inicio." :");
+      if ($numero <= $numero_inicio){
+          echo "el numero ".$numero." no es mayor que ".$numero_inicio."\n" ;
+          $numero=readline("Escriba un numero mas grande que ".$numero_inicio." :");
+        }
+      $numero_inicio=$numero;
     }
     echo "Gracias por su colaboracion";
 
