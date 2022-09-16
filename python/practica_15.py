@@ -6,7 +6,6 @@ a introducir,pida esos numeros, y diga final cuantos
 han sido pares y cuantos impares.
 
 """
-
 # Solucion
 
 cantidad=int(input("¿Cuantos valores va a introducir ? "))
