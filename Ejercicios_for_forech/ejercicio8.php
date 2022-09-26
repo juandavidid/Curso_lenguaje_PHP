@@ -1,6 +1,7 @@
 <?php
 
 /*
+
 EJERCICIO
 
 8.Escriba un programa que pregunte cuantos numeros se van a introducir,
